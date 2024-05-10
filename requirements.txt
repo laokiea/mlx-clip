@@ -1,4 +1,4 @@
-altgraph @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+altgraph
 annotated-types==0.6.0
 anyio==4.3.0
 asgiref==3.8.1
@@ -27,7 +27,7 @@ Flask==3.0.3
 flatbuffers==24.3.25
 fsspec==2024.3.1
 ftfy==6.2.0
-future @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+future
 google-auth==2.29.0
 googleapis-common-protos==1.63.0
 grpcio==1.62.2
@@ -48,12 +48,12 @@ Jinja2==3.1.3
 jmespath==1.0.1
 kubernetes==29.0.0
 lxml==5.2.1
-macholib @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+macholib
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
 mlx==0.11.1
-mlx-clip @ git+https://github.com/harperreed/mlx_clip.git@f56e3ecc72c74c68b6b50eb6f50c3f22fc23fe2c
+mlx-clip @
 mmh3==4.1.0
 monotonic==1.6
 mpmath==1.3.0
@@ -108,7 +108,7 @@ Scrapy==2.11.1
 sentencepiece==0.2.0
 service-identity==24.1.0
 shellingham==1.5.4
-six @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+six
 sniffio==1.3.1
 starlette==0.37.2
 sympy==1.12
