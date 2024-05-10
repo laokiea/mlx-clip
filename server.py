@@ -28,7 +28,7 @@ def search(name: str, image: Image) -> QueryResult:
     output = model(**inputs)
     results = collection.query(
         query_embeddings=[output.image_embeds[0].tolist()],
-        n_results=10,
+        n_results=30,
     )
     return results
 
