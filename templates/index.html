@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <style>
+        /* 设置全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* 设置logo样式 */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin: 40px 0 0 30%; /* 与页面顶部距离为40px，与页面左边距离为页面宽度的30% */
+            cursor: pointer; /* 鼠标移入变为手指样式 */
+            text-decoration: none; /* 去掉下划线 */
+            display: block;
+        }
+
+        /* 设置图片样式 */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .feed-item {
+            flex: 0 0 10px; /* 每行最多显示三张图片，设置间距 */
+            /* margin-bottom: 10px;  图片之间的垂直间距 */
+        }
+
+        .feed-item img {
+            max-width: 300px; /* 图片最大宽度为 300px */
+            max-height: 350px; /* 图片最大高度为 350px */
+            width: auto; /* 自动调整宽度 */
+            height: auto; /* 自动调整高度 */
+            margin-bottom: 10px; /* 图片下方留出间距 */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo，添加链接到主页 -->
+    <a href="https://mood-amber.vercel.app/" class="logo">Melody</a>
+
+    <!-- 图片流容器 -->
+    <div class="container">
+        {% for image in images %}
+            <div class="feed-item">
+                <a href="/search/{{image}}"><img src="{{ url_for('static', filename=image) }}" alt="{{ image }}"></a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
